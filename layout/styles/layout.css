@@ -39,6 +39,10 @@ File: Layout CSS
 #header #logo h1{font-size:32px; font-weight:700;}
 #header #logo h1 span{font-size:4rem; font-weight:400;}
 
+h4 {font-size: 20px; font-weight:700;}
+
+
+
 #header ul{}
 #header ul li{}
 #header ul li div{position:relative; min-height:60px; padding:0 0 0 80px;}
