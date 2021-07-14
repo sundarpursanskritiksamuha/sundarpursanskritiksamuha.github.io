@@ -1,0 +1,10 @@
+remove drop down menu 2 from hamro bare
+list 3 name as suchana tatha prakashan
+rename dropdown option 2 to prakashan
+rename kala tatha sahitya as sahitya
+merge drop down menu of gallery to one
+remove samparka dropdown menu
+make suchana,prakashan, as downloadable.
+
+
+
