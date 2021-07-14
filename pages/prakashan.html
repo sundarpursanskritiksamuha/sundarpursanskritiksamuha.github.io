@@ -39,8 +39,8 @@
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="one_half first">
-      <h1 class="logoname"><a href="index.html"><span>सुन्दरपुर​ सांस्कृतिक समुह​</span> </a></h1>
-      <h4 style="color:#f7a804;"><p><br> कला,साहित्य र संस्कृतिको संगम </p></h4>
+      <h1 class="logoname"><a href="index.html"><span>सुन्दरपुर​</span> सांस्कृतिक समुह​</a></h1>
+      <h4 style="color:#0e74a5;"><p><br> कला,साहित्य र संस्कृतिको संगम </p></h4>
     </div>
     <div class="one_half">
       <ul class="nospace clear">
@@ -121,101 +121,191 @@
       <div class="scrollable">
       </div>
       <div id="comments">
-        <h2>Our posts</h2>
+        <h2>प्रकाशन</h2>
         <ul>
-<!------------------------------- NEW POSTS------------------------>
+<!--------------------------------style continue reading--------------------------------------->
+        <style>
+          .pointer {cursor: pointer;}
+        </style>
+
+        <script>
+            function readMore(name) {
+            let dots = document.querySelector(`.card[data-name="${name}"] .dots`);
+            let moreText = document.querySelector(`.card[data-name="${name}"] .more`); 
+            let btnText = document.querySelector(`.card[data-name="${name}"] .myBtn`); 
+          
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Continue Reading &raquo;"
+              btnText.style.cursor = "pointer";
+              btnText.style.color = '#f7a804';
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read Less &laquo;";
+              btnText.style.cursor = "pointer";
+              btnText.style.color = '#f7a804'; 
+              moreText.style.display = "inline";
+            }
+          }
+          </script>
+<!------------------------------- NEW PRAKASHAN------------------------>
+        <div class="card" data-name="pk6">
           <li>
             <article>
               <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
                 <address>
                 By <a href="#">A Name</a>
                 </address>
                 <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
               </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
+
+            <!-------First part-------->    
+                This is an example 
+            <!------------------------->
+
+                  <span class="dots">...</span><span class="more" style="display: none;">
+
+            <!-------Second Part-------->
+                of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+            <!------------------------->  
+
             </article>
-            <p class="more"><a href="#">Continue Reading &raquo;</a></p>
+            <P onclick="readMore('pk6')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
           </li>
-<!-------------------------------POSTS------------------------>
-          <li>
-            <article>
-              <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
-                <address>
-                By <a href="#">A Name</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-<!------------------------------- POSTS------------------------>
-          <li>
-            <article>
-              <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
-                <address>
-                By <a href="#">A Name</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-<!-------------------------------POSTS---------------------------------->
-          <li>
-            <article>
-              <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
-                <address>
-                By <a href="#">A Name</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-<!-------------------------------POSTS---------------------------------->
-          <li>
-            <article>
-              <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
-                <address>
-                By <a href="#">A Name</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-<!-------------------------------POSTS---------------------------------->
-          <li>
-            <article>
-              <header>
-                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
-                <address>
-                By <a href="#">A Name</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-<!---------------------END OF POST------------------------------>
+          </div>
+<!-------------------------------PRAKASHAN------------------------>
+          <div class="card" data-name="pk5">
+            <li>
+              <article>
+                <header>
+                  <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
+                  <address>
+                  By <a href="#">A Name</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+
+              <!-------First part-------->    
+                  This is an example 
+              <!------------------------->
+
+                    <span class="dots">...</span><span class="more" style="display: none;">
+
+              <!-------Second Part-------->
+                  of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+              <!------------------------->  
+
+              </article>
+              <P onclick="readMore('pk5')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
+            </li>
+            </div>
+<!-------------------------------PRAKASHAN------------------------>
+          <div class="card" data-name="pk4">
+            <li>
+              <article>
+                <header>
+                  <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
+                  <address>
+                  By <a href="#">A Name</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+
+              <!-------First part-------->    
+                  This is an example 
+              <!------------------------->
+
+                    <span class="dots">...</span><span class="more" style="display: none;">
+
+              <!-------Second Part-------->
+                  of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+              <!------------------------->  
+
+              </article>
+              <P onclick="readMore('pk4')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
+            </li>
+            </div>
+<!-------------------------------PRAKASHAN------------------------>
+          <div class="card" data-name="pk3">
+            <li>
+              <article>
+                <header>
+                  <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
+                  <address>
+                  By <a href="#">A Name</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+
+              <!-------First part-------->    
+                  This is an example 
+              <!------------------------->
+
+                    <span class="dots">...</span><span class="more" style="display: none;">
+
+              <!-------Second Part-------->
+                  of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+              <!------------------------->  
+
+              </article>
+              <P onclick="readMore('pk3')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
+            </li>
+            </div>
+<!-------------------------------PRAKASHAN---------------------------------->
+          <div class="card" data-name="pk2">
+            <li>
+              <article>
+                <header>
+                  <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
+                  <address>
+                  By <a href="#">A Name</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+
+              <!-------First part-------->    
+                  This is an example 
+              <!------------------------->
+
+                    <span class="dots">...</span><span class="more" style="display: none;">
+
+              <!-------Second Part-------->
+                  of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+              <!------------------------->  
+
+              </article>
+              <P onclick="readMore('pk2')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
+            </li>
+            </div>
+<!-------------------------------PRAKASHAN---------------------------------->
+          <div class="card" data-name="pk1">
+            <li>
+              <article>
+                <header>
+                  <figure class="avatar"><img src="../images/demo/100x100.jpg" alt=""></figure>
+                  <address>
+                  By <a href="#">A Name</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+
+              <!-------First part-------->    
+                  This is an example 
+              <!------------------------->
+
+                    <span class="dots">...</span><span class="more" style="display: none;">
+
+              <!-------Second Part-------->
+                  of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</span></p>
+              <!------------------------->  
+
+              </article>
+              <P onclick="readMore('pk1')" class="myBtn"><a class="pointer">Continue Reading &raquo;</a></p>
+            </li>
+            </div>
+<!---------------------END OF PRAKASHAN------------------------------>
         <div style="text-align: center;">
           <p><a class="btn2" href="pages/post.html">More Posts</a></p>
         </div>
