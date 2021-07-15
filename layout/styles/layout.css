@@ -489,8 +489,12 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:450px){
 	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
 }
-
-
+------------------------------------
+.t1{
+    -moz-tab-size: 1;
+    tab-size: 1;
+}
+--------------------------------------
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
