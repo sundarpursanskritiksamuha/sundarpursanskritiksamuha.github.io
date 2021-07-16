@@ -297,27 +297,34 @@
         <div style="text-align: center;">
           <p><a class="btn2" href="pages/post.html">More Posts</a></p>
         </div>
- <!--------------EMAIL----------------------------------------------------------------->       
-        <h2><p>Request a post</p></h2>
-        <form action="https://formspree.io/f/mbjqaaln" method="post">
+         <!--------------EMAIL-----------------------------------------------------------------> 
+         <script>
+          function myFunctionemail() {
+            alert("Your Post request has been submitted. Thank you.");
+          }
+          </script>
+
+         <h2><p>Request a post</p></h2>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScx0-P9-ZVr99yqgHcxCsj0VGezHzbVIweU-Rh52Q8XpfKkxA/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="one_third first">
             <label for="name">Name <span>*</span></label>
-            <input type="text" name="name" id="name" value="" size="22" required>
+            <input type="text" name="entry.205438419" id="entry.205438419" value="" size="22" required>
           </div>
           <div class="one_third">
             <label for="email">Mail <span>*</span></label>
-            <input type="email" name="emailaddress" id="email" value="" size="22" required>
+            <input type="email" name="entry.145091678" id="entry.145091678" value="" size="22" required>
           </div>
           <div class="block clear">
             <label for="comment">Your Comment</label>
-            <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+            <textarea name="entry.1785553668" id="entry.1785553668" cols="25" rows="10"></textarea>
           </div>
           <div>
-            <input type="submit" name="submit" value="Submit Form">
+            <input type="submit" onclick="myFunctionemail()" name="submit" value="Submit">
             &nbsp;
-            <input type="reset" name="reset" value="Reset Form">
+            <input type="reset" name="reset" value="Reset">
           </div>
         </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
        </div>
       <!-- ################################################################################################ -->
     </div>
