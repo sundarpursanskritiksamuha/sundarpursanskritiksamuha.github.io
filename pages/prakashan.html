@@ -298,14 +298,14 @@
           <p><a class="btn2" href="pages/post.html">More Posts</a></p>
         </div>
          <!--------------EMAIL-----------------------------------------------------------------> 
+
          <script>
           function myFunctionemail() {
-            alert("Your Post request has been submitted. Thank you.");
-          }
-          </script>
-
+              alert("Your Post request has been submitted. Thank you.");}
+              </script>
+ 
          <h2><p>Request a post</p></h2>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLScx0-P9-ZVr99yqgHcxCsj0VGezHzbVIweU-Rh52Q8XpfKkxA/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <form name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScx0-P9-ZVr99yqgHcxCsj0VGezHzbVIweU-Rh52Q8XpfKkxA/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <div class="one_third first">
             <label for="name">Name <span>*</span></label>
             <input type="text" name="entry.205438419" id="entry.205438419" value="" size="22" required>
@@ -319,12 +319,11 @@
             <textarea name="entry.1785553668" id="entry.1785553668" cols="25" rows="10"></textarea>
           </div>
           <div>
-            <input type="submit" onclick="myFunctionemail()" name="submit" value="Submit">
-            &nbsp;
-            <input type="reset" name="reset" value="Reset">
+            <input type="submit" name="submit" value="Submit" onclick="myFunctionemail()">
+            <input id="reset" type="reset" name="reset" value="Reset" onclick="myFunctionreset()">
           </div>
-        </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+          </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
        </div>
       <!-- ################################################################################################ -->
     </div>
